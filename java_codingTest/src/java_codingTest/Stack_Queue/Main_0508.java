@@ -40,6 +40,30 @@ public class Main_0508 {
 			}
 		}
 		
+		/* Person 클래스 -> int 배열
+		Queue<int[]> q = new LinkedList<>();
+		for(int i=0; i<n; i++) {
+			int[] arr = {i, Integer.parseInt(str[i])};
+			q.offer(arr);
+		}
+
+		while(!q.isEmpty()) { 
+			int[] tmp = q.poll();
+			
+			for(int[] x : q) {
+				if(x[1] > tmp[1]) {
+					q.offer(tmp);
+					tmp = null;
+					break;
+				}
+			}
+			if(tmp != null) {
+				answer++;
+				if(tmp[0] == m) System.out.println(answer);
+			}
+		} 
+		*/
+		
 		br.close();
 		
 		return ;	
